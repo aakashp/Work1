@@ -53,3 +53,15 @@ if(connection())
 
 
 }
+
+manager.hpp
+#ifndef manager_hpp
+#define manager_hpp
+
+class manager:public customer 
+{
+  public:
+    bool connection();//dont think this is need since inheritance is there????
+    void view();
+    void payment(double);//either payment() or book() must be used since in payment we could have all func of book plus caln part and sql part of adding data to another table of view() can be added.
+    
